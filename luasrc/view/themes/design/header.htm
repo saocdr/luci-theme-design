@@ -119,7 +119,7 @@
 	-- Custom settings
 	local mode = 'normal'
 	local navbar = 'display'
-	local navbar_proxy = 'shadowsocksr'
+	local navbar_proxy = 'openclash'
 	if fs.access('/etc/config/design') then
 		mode = uci:get_first('design', 'global', 'mode')
 		navbar = uci:get_first('design', 'global', 'navbar')
@@ -202,7 +202,7 @@
   <% if navbar_proxy == 'openclash' then %>
   <a href="/cgi-bin/luci/admin/services/<%=navbar_proxy%>"><img src="<%=media%>/images/<%=navbar_proxy%>.png" /></a>
   <% else  %>
-  <a href="/cgi-bin/luci/admin/services/<%=navbar_proxy%>"><img src="<%=media%>/images/ssr.png" /></a>
+  <a href="/cgi-bin/luci/admin/services/<%=navbar_proxy%>"><img src="<%=media%>/images/openclash.png" /></a>
   <% end -%>	
   <a href="/cgi-bin/luci/admin/network/network"><img src="<%=media%>/images/port_down.png" /></a>
   <a href="/cgi-bin/luci/admin/network/wireless"><img src="<%=media%>/images/wireless.png" /></a>
